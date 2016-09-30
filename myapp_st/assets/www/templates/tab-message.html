@@ -1,0 +1,83 @@
+<ion-view view-title="消息.." hide-nav-bar="true" >
+
+<div class="row">
+  <div style="width: 50%">
+      <button ng-class="setButton(0)" ng-click="sel(0)">
+      Button1
+      </button>
+</div>
+  <div style="width: 50%">
+      <button ng-class="setButton(1)" ng-click="sel(1) ">
+      Button2
+      </button>
+  </div>
+ 
+</div>
+
+<ul class="nav  nav-pills nav-justified" ng-show=" 0 == btnSel" >
+  <li role="presentation" class="active">
+  <a ng-click="openDatePickerOne()" >日期选择</a></li>
+
+  <li role="presentation">
+  <a  ng-click="openDatePickerTwo()"   >Profile</a>
+  
+
+  </li>
+
+  <li role="presentation"><a  ng-click = "testmod()" >Messages</a></li>
+</ul>
+
+
+
+
+
+
+<!--
+
+<ul class="nav   nav-pills nav-justified">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+ 
+  <ion-content class = "padding" has-header="false" padding="true">
+
+
+  <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+    <div class="tabs" style="top: 0px" >
+
+      <a class="tab-item active" ui-sref="tab.taskMessage">
+    
+        任务消息
+      
+      </a>
+      <a class="tab-item" ui-sref="tab.taskIm">
+        
+        即时消息
+      </a>
+      <a class="tab-item"  ui-sref="tab.taskPublish" >
+       
+        公告消息
+      </a>
+    </div>
+  </div>
+
+   
+   </ion-content>
+<div class="card" padding-top = "100px">
+  <div class="item item-text-wrap">
+    This is a basic Card which contains an item that has wrapping text.
+  </div>
+</div>
+
+
+
+   
+-->
+
+
+
+
+
+</ion-view>
